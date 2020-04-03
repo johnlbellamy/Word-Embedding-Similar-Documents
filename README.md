@@ -1,7 +1,7 @@
 pnnl-demo
 ==============================
 
-Sentiment and semantic tagging for Solr
+Sentiment and semantic tagging to enable knowledge management using Solr.
 
 REQUIREMENTS
 ------------
@@ -11,12 +11,12 @@ REQUIREMENTS
 
 * This workflow is designed for a Linux environment. 
 
-You can build this workflow with make. The suggested (1 - 3 are required) steps are below:
+You can build this workflow with make. The steps to reproduce what is demoed are below:
 
 USAGE
 ------------
 
-### Downloads raw data and tensorflow module
+### Downloads raw data and tensorflow USE module
 1) make data
 
 ### Creates Anaconda environment and downloads pip reqs. 
@@ -31,7 +31,7 @@ USAGE
 ### Finishes the process by assigning sentiment to model. The processed data from this step is uploaded to Mongo
 5) make use_sentiment 
 
-### OPTIONAL TO SEE SVD
+### OPTIONAL: SVD
 1) follow steps 1-3 above then:
 2) make svd
 3) make svd_sentiment
