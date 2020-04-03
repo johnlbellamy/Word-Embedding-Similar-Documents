@@ -40,6 +40,8 @@ df = df.loc[indexes]
 
 df = df.iloc[0:20000]
 
+df = df.reset_index()
+
 print("Prepare USE...")
 print()
 
