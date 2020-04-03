@@ -16,23 +16,22 @@ You can build this workflow with make. The suggested (1 - 3 are required) steps 
 USAGE
 ------------
 
-#Downloads raw data and tensorflow module
+### Downloads raw data and tensorflow module
 1) make data
 
-#Creates Anaconda environment and downloads pip reqs. 
+### Creates Anaconda environment and downloads pip reqs. 
 2) make environment
 
-#Performs the cleaning and feature engineering
+### Performs the cleaning and feature engineering
 3) make features 
 
-#Creates the embedded sentiment model and tagged data
+### Creates the embedded sentiment model and tagged data
 4) make use
 
-#Finishes the process by assigning sentiment to model
-#The processed data from this step is uploaded to Mongo
+### Finishes the process by assigning sentiment to model. The processed data from this step is uploaded to Mongo
 5) make use_sentiment 
 
-#OPTIONAL TO SEE SVD
+### OPTIONAL TO SEE SVD
 1) follow steps 1-3 above then:
 2) make svd
 3) make svd_sentiment
