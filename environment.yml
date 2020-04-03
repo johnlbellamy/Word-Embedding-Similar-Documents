@@ -1,0 +1,10 @@
+name: pnnl
+
+dependencies:
+    - pip
+    - python=3.7
+    - pip:
+      - -r file:requirements.txt
+
+prefix: /home/'${USER}'/anaconda3/envs/pnnl
+
