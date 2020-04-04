@@ -1,3 +1,4 @@
+#!/bin/bash
 .PHONY: clean data lint requirements sync_data_to_s3 sync_data_from_s3
 
 #################################################################################
@@ -9,6 +10,7 @@ BUCKET = [OPTIONAL] your-bucket-for-syncing-data (do not include 's3://')
 PROFILE = default
 PROJECT_NAME = pnnl-demo
 PYTHON_INTERPRETER = /home/${USER}/anaconda3/envs/pnnl/bin/python
+PYTHON_ENV = /home/${USER}/anaconda3/envs/pnnl/
 
 ifeq (,$(shell which conda))
 HAS_CONDA=False
@@ -21,8 +23,9 @@ endif
 #################################################################################
 
 ## Make environment
-environment: 
+environment:
 
+	if [ -d "${PYTHON_ENV}" ]; then conda env remove --name pnnl && echo "removing old env..."; fi
 	conda env create -f environment.yml
 
 data:
@@ -33,7 +36,6 @@ data:
 	mkdir -p data/raw
 	mkdir -p src/models/use
 	bash src/data/make_dataset.sh
-	
 
 ## Make Datasets
 features:
