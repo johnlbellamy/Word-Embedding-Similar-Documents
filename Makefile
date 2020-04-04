@@ -26,8 +26,14 @@ environment:
 	conda env create -f environment.yml
 
 data:
-
+	mkdir -p data/external
+	mkdir -p data/external
+	mkdir -p data/interim
+	mkdir -p data/processed
+	mkdir -p data/raw
+	mkdir -p src/models/use
 	bash src/data/make_dataset.sh
+	
 
 ## Make Datasets
 features:
