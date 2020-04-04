@@ -129,7 +129,7 @@ text_and_par_df['par_text_clean'] = par_text
 text_and_par_df['par_text_clean'] = text_and_par_df['par_text_clean']\
                                     .map(lambda x: x.replace('job requirements', ''))
 
-stops = pickle.load(open('data/stops.pkl', 'rb'))
+stops = pickle.load(open('src/data/stops.pkl', 'rb'))
 
 stops.append('requirements')
 stops.append('requirement')
