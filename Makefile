@@ -30,7 +30,6 @@ environment:
 
 data:
 	mkdir -p data/external
-	mkdir -p data/external
 	mkdir -p data/interim
 	mkdir -p data/processed
 	mkdir -p data/raw
