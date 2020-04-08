@@ -9,8 +9,8 @@ PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 BUCKET = [OPTIONAL] your-bucket-for-syncing-data (do not include 's3://')
 PROFILE = default
 PROJECT_NAME = pnnl-demo
-PYTHON_INTERPRETER = /home/${USER}/anaconda3/envs/pnnl/bin/python
-PYTHON_ENV = /home/${USER}/anaconda3/envs/pnnl/
+PYTHON_INTERPRETER = /home/${USER}/anaconda3/envs/wembed/bin/python
+PYTHON_ENV = /home/${USER}/anaconda3/envs/wembed/
 
 ifeq (,$(shell which conda))
 HAS_CONDA=False

@@ -1,4 +1,4 @@
-name: pnnl
+name: wembed
 
 dependencies:
     - pip
@@ -6,5 +6,5 @@ dependencies:
     - pip:
       - -r file:requirements.txt
 
-prefix: /home/'${USER}'/anaconda3/envs/pnnl
+prefix: /home/'${USER}'/anaconda3/envs/wembed
 

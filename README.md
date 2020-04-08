@@ -1,4 +1,5 @@
-pnnl-demo
+Word Embedding:
+Finding Similar Documents and Document Polarity
 ==============================
 
 Sentiment and semantic tagging to enable knowledge management using Solr.
