@@ -56,7 +56,7 @@ tblib==1.6.0
 tensorboard==1.15.0
 tensorflow==1.15.2
 tensorflow-estimator==1.15.1
-tensorflow-gpu==1.15.2
+tensorflow-gpu==2.5.1
 tensorflow-hub==0.8.0
 termcolor==1.1.0
 toolz==0.10.0
