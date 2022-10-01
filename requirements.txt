@@ -19,7 +19,7 @@ Cython==0.29.16
 dask==2.13.0
 dask-glm==0.2.0
 dask-ml==1.2.0
-distributed==2.13.0
+distributed==2021.10.0
 fsspec==0.7.1
 gast==0.2.2
 google-pasta==0.2.0
